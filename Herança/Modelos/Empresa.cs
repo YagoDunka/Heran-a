@@ -5,7 +5,6 @@
         public string RazaoSocial { get; private set; }
         public string NomeFantasia { get; private set; }
         public string Cnpj { get; private set; }
-        public string Telefone { get; private set; }
 
     }
 }
