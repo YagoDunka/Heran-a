@@ -245,6 +245,7 @@
             this.Controls.Add(this.label1);
             this.Name = "TelaCadastroEmpresa";
             this.Text = "TelaCadastroEmpresa";
+            this.Load += new System.EventHandler(this.TelaCadastroEmpresa_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

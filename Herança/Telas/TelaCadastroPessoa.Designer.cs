@@ -226,6 +226,7 @@
             this.Controls.Add(this.ttbNome);
             this.Name = "TelaCadastroPessoa";
             this.Text = "TelaCadastroPessoa";
+            this.Load += new System.EventHandler(this.TelaCadastroPessoa_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

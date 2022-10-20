@@ -17,6 +17,7 @@ namespace Herança.Telas
         public TelaCadastroPessoa()
         {
             InitializeComponent();
+            MontaCombo();
         }
 
         private void btnValidar_Click(object sender, EventArgs e)
@@ -59,6 +60,22 @@ namespace Herança.Telas
 
                 MessageBox.Show("Informações válidas!");
             }
+
+        }
+
+        private void MontaCombo()
+        {
+            cbbEstado.Items.Add("--SELECIONE--");
+            cbbEstado.Items.Add("SP");
+            cbbEstado.Items.Add("SC");
+            cbbEstado.Items.Add("RJ");
+
+            cbbEstado.SelectedItem = "--SELECIONE--";
+            cbbEstado.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
+
+        private void TelaCadastroPessoa_Load(object sender, EventArgs e)
+        {
 
         }
     }
