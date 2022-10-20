@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Herança.FuncoesAuxiliares;
+using Herança.Modelos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -44,6 +46,19 @@ namespace Herança.Telas
 
             if (ttbTelefone.Text == "(  )     -")
                 listaErros.Add("\nO campo TELEFONE não pode ser vazio!");
+
+            if (Validacoes.TemErro(listaErros))
+            {
+                return;
+            }
+            else
+            {
+                Pessoa pessoa = new Pessoa(ttbNome.Text, ttbCPF.Text, ttbLogradouro.Text, ttbNumero.Text, ttbBairro.Text, ttbCidade.Text, cbbEstado.SelectedItem.ToString(), ttbNumero.Text);
+
+                //Aqui faremos a persistência no banco
+
+                MessageBox.Show("Informações válidas!");
+            }
 
         }
     }

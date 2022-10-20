@@ -77,7 +77,7 @@
             // ttbCNPJ
             // 
             this.ttbCNPJ.Location = new System.Drawing.Point(28, 126);
-            this.ttbCNPJ.Mask = "00,00,00/0000-00";
+            this.ttbCNPJ.Mask = "00,000,000/0000-00";
             this.ttbCNPJ.Name = "ttbCNPJ";
             this.ttbCNPJ.Size = new System.Drawing.Size(144, 23);
             this.ttbCNPJ.TabIndex = 3;
@@ -134,6 +134,7 @@
             this.btnValidar.TabIndex = 10;
             this.btnValidar.Text = "Validar";
             this.btnValidar.UseVisualStyleBackColor = true;
+            this.btnValidar.Click += new System.EventHandler(this.btnValidar_Click);
             // 
             // label2
             // 
